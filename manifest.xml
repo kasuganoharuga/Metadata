@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="7.0" ExtensionBundleId="com.yourcompany.metadatatool" ExtensionBundleVersion="1.0.0" ExtensionBundleName="Premiere Metadata Tool">
+  <ExtensionList>
+    <Extension Id="com.yourcompany.metadatatool.panel"/>
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name="PPRO" Version="[14.0,24.0]"/>
+    </HostList>
+    <LocaleList>
+      <Locale Code="All"/>
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="11.0"/>
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id="com.yourcompany.metadatatool.panel">
+      <DispatchInfo>
+        <Resources>
+          <MainPath>index.html</MainPath>
+          <CEFCommandLine/>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>true</AutoVisible>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>Metadata Tool</Menu>
+          <Geometry>
+            <Size>
+              <Height>650</Height>
+              <Width>350</Width>
+            </Size>
+          </Geometry>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>

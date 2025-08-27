@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Premiere Metadata Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Metadata Hub</h2>
+    <div>
+        <button id="importBtn">Import CSV → Premiere</button>
+        <button id="exportBtn">Export Premiere → CSV</button>
+        <button id="settingsBtn">Column Mapping & Settings</button>
+        <button id="csvBtn">Open CSV File Location</button>
+    </div>
+    <div id="status"></div>
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Column Mapping</h3>
+            <div id="mappingTable"></div>
+            <button id="saveMappingBtn">Save Mapping</button>
+        </div>
+    </div>
+    <script src="CSInterface.js"></script>
+    <script src="node.js"></script>
+    <script src="csvdb.js"></script>
+    <script src="panel.js"></script>
+</body>
+</html>
